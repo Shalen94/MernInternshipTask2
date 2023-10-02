@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK-19</title>
+    <script>
+        function Reverse(){
+            var x=parseInt(document.getElementById("x").value);
+            var rev=0;
+            while(x>0){
+                rev=rev*10+x%10;
+                x=parseInt(x/10);
+            }
+            document.getElementById('result').textContent=rev.toString();
+        }
+    </script>
+<script src="chrome-extension://agljpjecdbecjanckkbhpifjhemgdnlm/content2.js"></script>
+<style>
+    body{
+        position: relative;
+        background: linear-gradient(rgb(32, 32, 32),rgb(240, 247, 240));
+        background-repeat: no-repeat;
+        width: auto ;
+        height: 95vh;
+    }
+    body h1{
+        position: absolute;
+        align-items: center;
+        color: #000;
+        top: 25%;
+        left: 35%;
+        font-size: 3rem;
+
+    }
+    body p{
+        font-size: 2rem;
+        position: absolute;
+        top: 40%;
+        left: 35%;
+    }
+    input{
+        position: absolute;
+        top: 45%;
+        left: 54%;
+        font-size: 2rem;
+    }
+    button{
+        position: absolute;
+        top: 60%;
+        left:45%;
+        font-size: 2rem;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+    .one{
+        position: absolute;
+        top: 68%;
+        left: 45%;
+        font-size: 2rem;
+    }
+    span{
+        position: absolute;
+        font-size: 2rem;
+        top: 73%;
+        left: 54%;
+        
+    }
+</style>
+
+</head>
+<body>
+    <h1>Reversing a Number</h1>
+    <p>Enter Number : </p><input type="number" id="x" fdprocessedid="bjwaf">
+    <button onclick="Reverse()" fdprocessedid="o3e5u">Smubit</button>
+    <br>
+    <br>
+    <p class="one">Result :</p> <span id="result"></span>
+
+</body>
+</html>
